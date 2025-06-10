@@ -1,5 +1,80 @@
 <html>
-<head><meta charset="UTF-8"><title>Buscar Usuario</title></head>
-<body><h1>Buscar Usuario</h1><form><label>Nombre de usuario:</label><input type="text"><br><button>Buscar</button></form></body>
-  <a href="index.html">← Volver al índice</a>
+<head>
+  <meta charset="UTF-8">
+  <title>Buscar Usuario</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(135deg, #e1f5fe, #b3e5fc);
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .form-container {
+      background-color: #ffffff;
+      padding: 40px;
+      border-radius: 12px;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+      width: 300px;
+    }
+    h1 {
+      text-align: center;
+      color: #1e88e5;
+      margin-bottom: 24px;
+    }
+    label {
+      display: block;
+      margin-bottom: 8px;
+      color: #333;
+    }
+    input[type="text"] {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 16px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+    }
+    button {
+      width: 100%;
+      padding: 10px;
+      background-color: #1e88e5;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+    button:hover {
+      background-color: #1565c0;
+    }
+    .link {
+      text-align: center;
+      margin-top: 16px;
+    }
+    .link a {
+      color: #1e88e5;
+      text-decoration: none;
+    }
+    .link a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <div class="form-container">
+    <h1>Buscar Usuario</h1>
+    <form>
+      <label for="usuario">Nombre de usuario:</label>
+      <input type="text" id="usuario" name="usuario">
+
+      <button type="submit">Buscar</button>
+    </form>
+    <div class="link">
+      <a href="index.html">&#8592; Volver al inicio</a>
+    </div>
+  </div>
+</body>
 </html>

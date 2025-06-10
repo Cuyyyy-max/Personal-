@@ -33,6 +33,21 @@
     }
     li {
       margin-bottom: 10px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .actions {
+      margin-left: 10px;
+    }
+    .actions span {
+      cursor: pointer;
+      margin-left: 8px;
+      color: #1e88e5;
+      font-size: 14px;
+    }
+    .actions span:hover {
+      text-decoration: underline;
     }
     a {
       display: inline-block;
@@ -49,10 +64,10 @@
   <div class="container">
     <h1>Lista de Usuarios</h1>
     <ul>
-      <li>Juan Pérez - juan@example.com</li>
-      <li>Ana Gómez - ana@example.com</li>
-      <li>Lucas Díaz - lucas@example.com</li>
-      <li>Sofía Martínez - sofia@example.com</li>
+      <li>Juan Pérez - juan@example.com <span class="actions">📝 Editar 🗑️ Borrar</span></li>
+      <li>Ana Gómez - ana@example.com <span class="actions">📝 Editar 🗑️ Borrar</span></li>
+      <li>Lucas Díaz - lucas@example.com <span class="actions">📝 Editar 🗑️ Borrar</span></li>
+      <li>Sofía Martínez - sofia@example.com <span class="actions">📝 Editar 🗑️ Borrar</span></li>
     </ul>
     <a href="index.html">&#8592; Volver al inicio</a>
   </div>

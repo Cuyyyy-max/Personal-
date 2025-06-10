@@ -1,23 +1,74 @@
 <html>
-  <head>
-    <title>Comidas Favoritas</title>
-  </head>
-  <body>
-    <h1>Estas son mis comidas favoritas</h1>
-    <h2><table border="1">
-  <tr>
-    <th>Comidas</th>
-    <th>Ejemplos</th>
-  </tr>
-  <tr>
-    <td>Pasta</td>
-    <td><img src="pasta.jpg" alt="Nose pudo cargar en este momento intente mas tarde"></td>
-  </tr>
-  <tr>
-    <td>Milanesas Napolitana</td>
-    <td><img src="Milanesa Napolitana.jpg" alt="Nose pudo cargar en este momento intente mas tarde"></td>
-  </tr>
-</table></h2>
-     <a href="index.html">Volver al índice</a>
-  </body>
+<head>
+  <meta charset="UTF-8">
+  <title>Comidas Favoritas</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(135deg, #e3f2fd, #bbdefb);
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+    h1 {
+      color: #1565c0;
+      margin-bottom: 24px;
+    }
+    table {
+      border-collapse: collapse;
+      width: 80%;
+      max-width: 600px;
+      background-color: #ffffff;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    th, td {
+      border: 1px solid #ccc;
+      padding: 12px;
+      text-align: center;
+    }
+    th {
+      background-color: #1976d2;
+      color: white;
+    }
+    img {
+      width: 100px;
+      height: auto;
+    }
+    .link {
+      margin-top: 20px;
+    }
+    .link a {
+      color: #1e88e5;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .link a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <h1>Estas son mis comidas favoritas</h1>
+  <table>
+    <tr>
+      <th>Comidas</th>
+      <th>Ejemplos</th>
+    </tr>
+    <tr>
+      <td>Pasta</td>
+      <td><img src="pasta.jpg" alt="No se pudo cargar en este momento, intente más tarde"></td>
+    </tr>
+    <tr>
+      <td>Milanesas Napolitana</td>
+      <td><img src="Milanesa Napolitana.jpg" alt="No se pudo cargar en este momento, intente más tarde"></td>
+    </tr>
+  </table>
+  <div class="link">
+    <a href="index.html">&#8592; Volver al índice</a>
+  </div>
+</body>
 </html>

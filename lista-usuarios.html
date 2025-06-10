@@ -59,16 +59,57 @@
       text-decoration: underline;
     }
   </style>
+  <script>
+    function editarUsuario(nombre) {
+      alert('Editar usuario: ' + nombre);
+    }
+
+    function borrarUsuario(nombre) {
+      const confirmar = confirm('¿Estás seguro de que deseas borrar a ' + nombre + '?');
+      if (confirmar) {
+        alert('Usuario ' + nombre + ' borrado');
+      }
+    }
+  </script>
 </head>
 <body>
   <div class="container">
     <h1>Lista de Usuarios</h1>
     <ul>
-      <li>Juan Pérez - juan@example.com <span class="actions">📝 Editar 🗑️ Borrar</span></li>
-      <li>Ana Gómez - ana@example.com <span class="actions">📝 Editar 🗑️ Borrar</span></li>
-      <li>Lucas Díaz - lucas@example.com <span class="actions">📝 Editar 🗑️ Borrar</span></li>
-      <li>Sofía Martínez - sofia@example.com <span class="actions">📝 Editar 🗑️ Borrar</span></li>
+      <li>
+        Juan Pérez - juan@example.com
+        <span class="actions">
+          <span onclick="editarUsuario('Juan Pérez')">📝 Editar</span>
+          <span onclick="borrarUsuario('Juan Pérez')">🗑️ Borrar</span>
+        </span>
+      </li>
+      <li>
+        Ana Gómez - ana@example.com
+        <span class="actions">
+          <span onclick="editarUsuario('Ana Gómez')">📝 Editar</span>
+          <span onclick="borrarUsuario('Ana Gómez')">🗑️ Borrar</span>
+        </span>
+      </li>
+      <li>
+        Lucas Díaz - lucas@example.com
+        <span class="actions">
+          <span onclick="editarUsuario('Lucas Díaz')">📝 Editar</span>
+          <span onclick="borrarUsuario('Lucas Díaz')">🗑️ Borrar</span>
+        </span>
+      </li>
+      <li>
+        Sofía Martínez - sofia@example.com
+        <span class="actions">
+          <span onclick="editarUsuario('Sofía Martínez')">📝 Editar</span>
+          <span onclick="borrarUsuario('Sofía Martínez')">🗑️ Borrar</span>
+        </span>
+      </li>
     </ul>
+    <a href="index.html">&#8592; Volver al inicio</a>
+  </div>
+</body>
+</html>
+
     <a href="index.html">&#8592; Volver al inicio</a>
   </div>
 </body>
